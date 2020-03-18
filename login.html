@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Manager Login</title>
+    <script src="login.js"></script>
+    <style>
+        #background
+        {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #form
+        {
+            background-color:pink;
+            margin-top:10%;
+            font-family: cursive;
+            font-weight:bolder;
+            color:darkslategrey;
+            text-align: center;
+            line-height: 1.1;
+            font-size: xx-large;
+            display: block;
+            margin-left: 40%;
+            margin-right: 40%;
+            padding:40px;
+            border-radius: 10px;
+            border: 5px solid palevioletred;
+            box-shadow: 10px 5px silver;
+        }
+        #sub
+        {
+            background-color:white;
+            border-radius: 10px;
+            height:40px;
+            width:120px;
+        }
+        input{
+            height: 30px;
+            width:200px;
+            border: slategray;
+        }
+    </style>
+</head>
+<body background="Ardium-Cute-checklist-to-do-list-memo-notepad-01__33548.1548050256.webp" id ="background">
+    <div id = "form">
+    <form>
+        <label for="UserName">Username</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="Password">Password</label><br>
+        <input type="password" id="pswd" name="pswd" required><br><br>
+        <input type="submit" value="Login" id="sub" onclick= "return validate()">
+    </form>
+    </div>
+</body>
+</html>

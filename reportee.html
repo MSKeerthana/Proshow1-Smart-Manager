@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="checkliststyle.css">
+    <title>Reportee Checklist</title>
+</head>
+<body onload="storevalues()" background="checklist-800x531.png">
+	<div class="container">
+		<div class="row">
+			<div class="helpText col-12">
+                    <p>Assigned Tasks!!!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<input id="userInput" type="text" placeholder="New item..." maxlength="50">
+				<button id="enter"><i class='fas fa-edit'></i></button>
+			</div>
+		</div>
+		<!-- Empty List -->
+		<div class="row">
+			<div class="listItems col-12">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2" id = "listItems">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div><button type="Submit" onclick = "statusdashboard()" id="completed">Completed...</button></div>
+	<script type="text/javascript" src="script_method3.js"></script>
+</body>
+</html>
